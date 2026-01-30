@@ -23,7 +23,15 @@
       <option>Gravitasi</option>
       <option>Waktu</option>
     </select>
-    <input type="number" id="percent1" value="50" min="0" max="100"> %
+
+    <input
+      type="number"
+      id="percent1"
+      value="50"
+      min="0"
+      max="100"
+      oninput="syncPercent(1)"
+    > %
 
     <label>Input 2</label>
     <select id="input2">
@@ -34,7 +42,15 @@
       <option>Gravitasi</option>
       <option>Waktu</option>
     </select>
-    <input type="number" id="percent2" value="50" min="0" max="100"> %
+
+    <input
+      type="number"
+      id="percent2"
+      value="50"
+      min="0"
+      max="100"
+      oninput="syncPercent(2)"
+    > %
 
     <button onclick="combine()">Gabungkan</button>
 
