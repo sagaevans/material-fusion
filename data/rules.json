@@ -1,0 +1,37 @@
+[
+  {
+    "a": "air",
+    "b": "energi_panas",
+    "min_b": 50,
+    "result": "Uap (H₂O gas)",
+    "explain": "Panas yang cukup membuat air berubah dari cair menjadi gas."
+  },
+  {
+    "a": "air",
+    "b": "energi_dingin",
+    "min_b": 40,
+    "result": "Es (H₂O padat)",
+    "explain": "Pendinginan membuat air berubah dari cair menjadi padat."
+  },
+  {
+    "a": "hidrogen",
+    "b": "oksigen",
+    "min_a": 60,
+    "min_b": 30,
+    "result": "Air (H₂O)",
+    "explain": "Hidrogen dan oksigen dapat bergabung membentuk molekul air."
+  },
+  {
+    "a": "air",
+    "b": "oksigen",
+    "result": "Tidak ada reaksi",
+    "explain": "Air sudah mengandung oksigen, jadi ditambah oksigen lagi tidak berubah."
+  },
+  {
+    "a": "hidrogen",
+    "b": "gravitasi",
+    "min_b": 20,
+    "result": "Proto-bintang",
+    "explain": "Gravitasi menarik gas hidrogen hingga mulai membentuk bintang."
+  }
+]
