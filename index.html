@@ -7,62 +7,23 @@
 </head>
 <body>
 
-  <h2>Material Fusion Simulator</h2>
+<h2>Material Fusion Simulator</h2>
 
-  <div class="container">
+<div class="container">
+  <label>Input 1</label>
+  <select id="input1"></select>
+  <input type="number" id="percent1" value="50" oninput="syncPercent(1)"> %
 
-    <label>Input 1</label>
-    <select id="input1">
-      <option>Air</option>
-      <option>Energi Panas</option>
-      <option>Energi Dingin</option>
-      <option>Hidrogen</option>
-      <option>Oksigen</option>
-      <option>Karbon</option>
-      <option>Gas Hidrogen</option>
-      <option>Gravitasi</option>
-      <option>Waktu</option>
-    </select>
+  <label>Input 2</label>
+  <select id="input2"></select>
+  <input type="number" id="percent2" value="50" oninput="syncPercent(2)"> %
 
-    <input
-      type="number"
-      id="percent1"
-      value="50"
-      min="0"
-      max="100"
-      oninput="syncPercent(1)"
-    > %
+  <button onclick="combine()">Gabungkan</button>
 
-    <label>Input 2</label>
-    <select id="input2">
-      <option>Energi Panas</option>
-      <option>Air</option>
-      <option>Energi Dingin</option>
-      <option>Oksigen</option>
-      <option>Gravitasi</option>
-      <option>Waktu</option>
-    </select>
+  <div id="result">Output: -</div>
+  <div id="explanation"></div>
+</div>
 
-    <input
-      type="number"
-      id="percent2"
-      value="50"
-      min="0"
-      max="100"
-      oninput="syncPercent(2)"
-    > %
-
-    <button onclick="combine()">Gabungkan</button>
-
-    <div id="result">Output: -</div>
-    <div id="explanation"></div>
-
-  </div>
-
-  <div class="footer">
-    Prototype • Browser-based • Science Logic
-  </div>
-
-  <script src="logic.js"></script>
+<script src="logic.js"></script>
 </body>
 </html>
