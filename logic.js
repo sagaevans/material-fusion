@@ -1,7 +1,6 @@
 let rules = [];
 let elements = [];
 
-// normalisasi teks
 function normalize(text) {
   return text.trim().toLowerCase();
 }
@@ -17,10 +16,17 @@ Promise.all([
   populateSelect("input2");
 });
 
-// ISI DROPDOWN DARI elements.json
+// ISI DROPDOWN
 function populateSelect(id) {
   const select = document.getElementById(id);
   select.innerHTML = "";
+
+  const placeholder = document.createElement("option");
+  placeholder.value = "";
+  placeholder.textContent = "-- pilih materi / energi --";
+  placeholder.disabled = true;
+  placeholder.selected = true;
+  select.appendChild(placeholder);
 
   elements.forEach(el => {
     const opt = document.createElement("option");
