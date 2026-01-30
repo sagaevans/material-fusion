@@ -1,14 +1,36 @@
 let rules = [];
+let elements = [];
 
+// normalisasi teks
 function normalize(text) {
   return text.trim().toLowerCase();
 }
 
-// load rules dari JSON
-fetch("rules.json")
-  .then(res => res.json())
-  .then(data => rules = data);
+// LOAD DATA
+Promise.all([
+  fetch("data/rules.json").then(r => r.json()),
+  fetch("data/elements.json").then(e => e.json())
+]).then(([rulesData, elementsData]) => {
+  rules = rulesData;
+  elements = elementsData;
+  populateSelect("input1");
+  populateSelect("input2");
+});
 
+// ISI DROPDOWN DARI elements.json
+function populateSelect(id) {
+  const select = document.getElementById(id);
+  select.innerHTML = "";
+
+  elements.forEach(el => {
+    const opt = document.createElement("option");
+    opt.value = el.id;
+    opt.textContent = el.id;
+    select.appendChild(opt);
+  });
+}
+
+// PROSES KOMBINASI
 function combine() {
   const a = normalize(document.getElementById("input1").value);
   const b = normalize(document.getElementById("input2").value);
