@@ -13,6 +13,7 @@
     "result": "Es (H₂O padat)",
     "explain": "Pendinginan membuat air berubah dari cair menjadi padat."
   },
+
   {
     "a": "hidrogen",
     "b": "oksigen",
@@ -22,11 +23,29 @@
     "explain": "Hidrogen dan oksigen dapat bergabung membentuk molekul air."
   },
   {
+    "a": "oksigen",
+    "b": "hidrogen",
+    "min_a": 30,
+    "min_b": 60,
+    "result": "Air (H₂O)",
+    "explain": "Oksigen dan hidrogen dapat bergabung membentuk molekul air."
+  },
+
+  {
     "a": "air",
     "b": "oksigen",
     "result": "Tidak ada reaksi",
     "explain": "Air sudah mengandung oksigen, jadi ditambah oksigen lagi tidak berubah."
   },
+
+  {
+    "a": "karbon",
+    "b": "oksigen",
+    "min_b": 40,
+    "result": "Karbon Dioksida (CO₂)",
+    "explain": "Karbon bereaksi dengan oksigen membentuk gas karbon dioksida."
+  },
+
   {
     "a": "hidrogen",
     "b": "gravitasi",
