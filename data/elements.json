@@ -12,12 +12,10 @@
 
   { "id": "karbon dioksida", "type": "senyawa" },
 
-  { "id": "gas", "type": "materi" },
-  { "id": "udara", "type": "materi" },
-
   { "id": "batu", "type": "materi" },
   { "id": "logam", "type": "materi" },
 
+  { "id": "gas", "type": "materi" },
   { "id": "ruang kecil", "type": "kondisi" },
   { "id": "tekanan tinggi", "type": "kondisi" },
 
