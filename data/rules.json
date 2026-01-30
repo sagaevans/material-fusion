@@ -1,56 +1,25 @@
 [
-  {
-    "a": "air",
-    "b": "energi_panas",
-    "min_b": 50,
-    "result": "Uap (H₂O gas)",
-    "explain": "Panas yang cukup membuat air berubah dari cair menjadi gas."
-  },
-  {
-    "a": "air",
-    "b": "energi_dingin",
-    "min_b": 40,
-    "result": "Es (H₂O padat)",
-    "explain": "Pendinginan membuat air berubah dari cair menjadi padat."
-  },
+  { "inputs": ["air", "energi panas"], "result": "uap", "explain": "Energi panas membuat air berubah dari cair menjadi gas." },
+  { "inputs": ["air", "energi dingin"], "result": "es", "explain": "Energi dingin membuat air membeku menjadi padat." },
+  { "inputs": ["uap", "energi dingin"], "result": "air", "explain": "Pendinginan membuat uap kembali menjadi air." },
+  { "inputs": ["es", "energi panas"], "result": "air", "explain": "Pemanasan membuat es mencair menjadi air." },
 
-  {
-    "a": "hidrogen",
-    "b": "oksigen",
-    "min_a": 60,
-    "min_b": 30,
-    "result": "Air (H₂O)",
-    "explain": "Hidrogen dan oksigen dapat bergabung membentuk molekul air."
-  },
-  {
-    "a": "oksigen",
-    "b": "hidrogen",
-    "min_a": 30,
-    "min_b": 60,
-    "result": "Air (H₂O)",
-    "explain": "Oksigen dan hidrogen dapat bergabung membentuk molekul air."
-  },
+  { "inputs": ["hidrogen", "oksigen"], "result": "air", "explain": "Hidrogen dan oksigen dapat bergabung membentuk air." },
+  { "inputs": ["karbon", "oksigen"], "result": "karbon dioksida", "explain": "Karbon bereaksi dengan oksigen membentuk karbon dioksida." },
 
-  {
-    "a": "air",
-    "b": "oksigen",
-    "result": "Tidak ada reaksi",
-    "explain": "Air sudah mengandung oksigen, jadi ditambah oksigen lagi tidak berubah."
-  },
+  { "inputs": ["air", "oksigen"], "result": "tidak ada reaksi", "explain": "Air sudah mengandung oksigen sehingga tidak berubah." },
+  { "inputs": ["air", "hidrogen"], "result": "tidak ada reaksi", "explain": "Air adalah zat stabil dalam kondisi normal." },
 
-  {
-    "a": "karbon",
-    "b": "oksigen",
-    "min_b": 40,
-    "result": "Karbon Dioksida (CO₂)",
-    "explain": "Karbon bereaksi dengan oksigen membentuk gas karbon dioksida."
-  },
+  { "inputs": ["batu", "energi panas"], "result": "batu panas", "explain": "Energi panas hanya menaikkan suhu batu." },
+  { "inputs": ["logam", "energi dingin"], "result": "logam dingin", "explain": "Energi dingin menurunkan suhu logam." },
 
-  {
-    "a": "hidrogen",
-    "b": "gravitasi",
-    "min_b": 20,
-    "result": "Proto-bintang",
-    "explain": "Gravitasi menarik gas hidrogen hingga mulai membentuk bintang."
-  }
+  { "inputs": ["gas", "ruang kecil"], "result": "tekanan meningkat", "explain": "Gas dalam ruang sempit memiliki tekanan lebih tinggi." },
+  { "inputs": ["uap", "tekanan tinggi"], "result": "air", "explain": "Tekanan tinggi dapat mengubah uap menjadi air." },
+
+  { "inputs": ["gravitasi", "gas"], "result": "gas terkumpul", "explain": "Gravitasi menarik gas untuk berkumpul." },
+  { "inputs": ["gravitasi", "hidrogen"], "result": "awan hidrogen", "explain": "Gravitasi membuat hidrogen berkumpul di ruang angkasa." },
+
+  { "inputs": ["awan hidrogen", "gravitasi"], "result": "proto bintang", "explain": "Tekanan gravitasi membentuk cikal bakal bintang." },
+  { "inputs": ["proto bintang", "waktu"], "result": "bintang", "explain": "Seiring waktu, proto bintang berkembang menjadi bintang." },
+  { "inputs": ["bintang", "waktu"], "result": "supernova", "explain": "Bintang besar akan meledak setelah kehabisan energi." }
 ]
