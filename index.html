@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Material Fusion Prototype</title>
+</head>
+<body>
+
+<h2>Material Fusion Simulator</h2>
+
+<label>Input 1:</label>
+<select id="input1">
+  <option>Air</option>
+  <option>Energi Panas</option>
+  <option>Hidrogen</option>
+  <option>Oksigen</option>
+  <option>Gas Hidrogen</option>
+  <option>Gravitasi</option>
+</select>
+
+<input type="number" id="percent1" value="50"> %
+
+<br><br>
+
+<label>Input 2:</label>
+<select id="input2">
+  <option>Energi Panas</option>
+  <option>Air</option>
+  <option>Oksigen</option>
+  <option>Gravitasi</option>
+  <option>Waktu</option>
+</select>
+
+<input type="number" id="percent2" value="50"> %
+
+<br><br>
+
+<button onclick="combine()">Gabungkan</button>
+
+<h3 id="result">Output: -</h3>
+
+<script src="logic.js"></script>
+</body>
+</html>
