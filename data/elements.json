@@ -1,38 +1,31 @@
 [
-  {
-    "id": "air",
-    "name": "Air",
-    "icon": "💧",
-    "type": "materi"
-  },
-  {
-    "id": "energi_panas",
-    "name": "Energi Panas",
-    "icon": "🔥",
-    "type": "energi"
-  },
-  {
-    "id": "energi_dingin",
-    "name": "Energi Dingin",
-    "icon": "❄️",
-    "type": "energi"
-  },
-  {
-    "id": "oksigen",
-    "name": "Oksigen",
-    "icon": "🌬️",
-    "type": "gas"
-  },
-  {
-    "id": "hidrogen",
-    "name": "Hidrogen",
-    "icon": "⚛️",
-    "type": "elemen"
-  },
-  {
-    "id": "gravitasi",
-    "name": "Gravitasi",
-    "icon": "🌍",
-    "type": "gaya"
-  }
+  { "id": "air", "type": "materi" },
+  { "id": "uap", "type": "materi" },
+  { "id": "es", "type": "materi" },
+
+  { "id": "energi panas", "type": "energi" },
+  { "id": "energi dingin", "type": "energi" },
+
+  { "id": "hidrogen", "type": "elemen" },
+  { "id": "oksigen", "type": "elemen" },
+  { "id": "karbon", "type": "elemen" },
+
+  { "id": "karbon dioksida", "type": "senyawa" },
+
+  { "id": "gas", "type": "materi" },
+  { "id": "udara", "type": "materi" },
+
+  { "id": "batu", "type": "materi" },
+  { "id": "logam", "type": "materi" },
+
+  { "id": "ruang kecil", "type": "kondisi" },
+  { "id": "tekanan tinggi", "type": "kondisi" },
+
+  { "id": "gravitasi", "type": "gaya" },
+  { "id": "waktu", "type": "konsep" },
+
+  { "id": "awan hidrogen", "type": "kosmik" },
+  { "id": "proto bintang", "type": "kosmik" },
+  { "id": "bintang", "type": "kosmik" },
+  { "id": "supernova", "type": "kosmik" }
 ]
