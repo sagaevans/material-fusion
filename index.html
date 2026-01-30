@@ -2,25 +2,23 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Material Fusion Simulator</title>
+  <title>Simulasi Materi & Energi</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h2>Material Fusion Simulator</h2>
+<h2>Simulasi Materi & Energi (Edukasi)</h2>
 
 <div class="container">
   <label>Input 1</label>
-  <select id="input1"></select>
-  <input type="number" id="percent1" value="50" oninput="syncPercent(1)"> %
+  <input type="text" id="input1" placeholder="contoh: air">
 
   <label>Input 2</label>
-  <select id="input2"></select>
-  <input type="number" id="percent2" value="50" oninput="syncPercent(2)"> %
+  <input type="text" id="input2" placeholder="contoh: energi panas">
 
-  <button onclick="combine()">Gabungkan</button>
+  <button onclick="combine()">Proses</button>
 
-  <div id="result">Output: -</div>
+  <div id="result">Hasil: -</div>
   <div id="explanation"></div>
 </div>
 
